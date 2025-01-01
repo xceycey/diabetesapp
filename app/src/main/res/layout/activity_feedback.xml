@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/anatema"
+    android:orientation="vertical"
+    tools:context=".Feedback">
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="?attr/anatema"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/geritus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:backgroundTint="?attr/anatema"
+            android:src="@drawable/back"
+            app:tint="?attr/textrengi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserratextrabold"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="Geri Bildirim"
+            android:textColor="?attr/textrengi"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="217dp"
+        android:layout_gravity="center"
+        android:baselineAlignBottom="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/review" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/degergir"
+        android:background="@drawable/rounded"
+        android:orientation="vertical">
+
+        <com.hadi.emojiratingbar.EmojiRatingBar
+            android:id="@+id/emojiratingbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp" />
+
+        <EditText
+            android:id="@+id/mesaj"
+            android:maxLength="250"
+            android:layout_width="match_parent"
+            android:layout_height="224dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded2"
+            android:backgroundTint="@color/white0"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textAlignment="gravity"
+            android:gravity="start"
+            android:textColor="@color/black2"
+            android:fontFamily="@font/montserratmedium"
+            android:hint="Uygulamamızı geliştirmemize yardımcı olmak için bize görüşlerini bildir"
+            android:textColorHint="#6C6A6A"/>
+
+        <Button
+            android:id="@+id/gonder"
+            android:background="@drawable/round_corner"
+            app:backgroundTint="@color/turuncu"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserratextrabold"
+            android:gravity="center"
+            android:text="GÖNDER"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

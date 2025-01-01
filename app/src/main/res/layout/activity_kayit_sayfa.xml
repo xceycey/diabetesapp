@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginSayfa"
+    android:background="?attr/anatema"
+    >
+
+    <TextView
+        android:id="@+id/hg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/montserratextrabold"
+        android:text="KAYIT OL"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/box3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/box3"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hg"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/box1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hg">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:background="@drawable/giris"
+            android:backgroundTint="?attr/beyazmavi2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:paddingLeft="25dp"
+                android:text="AD"
+                android:textColor="@color/mavi3"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtad"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="?attr/textrengi"
+                android:fontFamily="@font/montserratsemibold"
+                android:inputType="textEmailAddress"
+                android:paddingTop="7dp"
+                android:textColor="?attr/textrengi" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:gravity="right"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/giris"
+            android:backgroundTint="?attr/beyazmavi2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtsoyad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:paddingLeft="25dp"
+                android:text="SOYAD"
+                android:textColor="@color/mavi3"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtsoyad"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="?attr/textrengi"
+                android:fontFamily="@font/montserratsemibold"
+                android:inputType="textEmailAddress"
+                android:paddingTop="7dp"
+                android:textColor="?attr/textrengi" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/box1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/box3"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/giris"
+        android:backgroundTint="?attr/beyazmavi2"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/box2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box3">
+
+        <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:paddingLeft="25dp"
+            android:text="E-MAIL"
+            android:textColor="@color/mavi3"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/mail"
+                app:tint="?attr/textrengi" />
+
+            <EditText
+                android:id="@+id/edtmail"
+                android:layout_width="275dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="?attr/textrengi"
+                android:fontFamily="@font/montserratsemibold"
+                android:inputType="textEmailAddress"
+                android:paddingTop="5dp"
+                android:textColor="?attr/textrengi" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/box2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/box1"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/giris"
+        android:backgroundTint="?attr/beyazmavi2"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box1">
+
+        <TextView
+            android:id="@+id/parola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:paddingLeft="25dp"
+            android:text="PAROLA"
+            android:textColor="#7592C8"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/parola"
+                app:tint="?attr/textrengi" />
+
+
+            <EditText
+                android:id="@+id/edtsifre"
+                android:layout_width="275dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="?attr/textrengi"
+                android:fontFamily="@font/montserratsemibold"
+                android:inputType="textPassword"
+                android:paddingTop="5dp"
+                android:textColor="?attr/textrengi" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/box2"
+        android:layout_marginBottom="90dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnkaydol"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_corner"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/montserratbold"
+                android:text="KAYIT OL"
+                android:textColor="@color/mavi3"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtgirisyap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:gravity="center"
+            android:text="Zaten bir hesabın var mı?"
+            android:textColor="#B2B2B5"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

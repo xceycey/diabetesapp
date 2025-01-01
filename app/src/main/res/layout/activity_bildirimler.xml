@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/anatema"
+    android:orientation="vertical"
+    tools:context=".Feedback">
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="?attr/anatema"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/geritus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/back"
+            app:backgroundTint="?attr/anatema"
+            app:tint="?attr/textrengi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserratextrabold"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="Bildirim Ayarla"
+            android:textColor="?attr/textrengi"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/notifications"
+            app:tint="@color/black2"/>
+
+        <EditText
+            android:id="@+id/bildirimad"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:maxLength="20"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edttxt"
+            android:fontFamily="@font/montserratsemibold"
+            android:hint="Bildirim adını gir"
+            android:paddingLeft="15dp"
+            android:textColorHint="?attr/beyazsiyah"
+            android:textColor="?attr/textrengi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtsaat"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratbold"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnsaat"
+                android:layout_width="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black2"
+                android:fontFamily="@font/montserratextrabold"
+                android:text="Saat Seç"
+                android:textAllCaps="false"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radioall"
+                android:layout_width="91dp"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:text="Her gün" />
+        </RadioGroup>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/kaydet"
+            android:layout_width="115dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/turuncu"
+            android:fontFamily="@font/montserratextrabold"
+            android:text="Kaydet"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sil"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/turuncu"
+            android:fontFamily="@font/montserratextrabold"
+            android:text="SİL"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

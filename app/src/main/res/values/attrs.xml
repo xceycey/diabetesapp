@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomAttr">
+        <attr name="textrengi" format="color" />
+        <attr name="anatema" format="color" />
+        <attr name="turuncumavi3" format="color" />
+        <attr name="beyazmavi2" format="color" />
+        <attr name="beyaz0mavi2" format="color" />
+        <attr name="siyah2mavi3" format="color" />
+        <attr name="siyah2beyaz" format="color" />
+        <attr name="beyazsiyah" format="color" />
+        <attr name="siyah2siyah" format="color" />
+        <attr name="beyaz0turuncu" format="color" />
+        <attr name="beyaz2turuncu" format="color" />
+        <attr name="siyah2mavi2" format="color" />
+    </declare-styleable>
+
+</resources>

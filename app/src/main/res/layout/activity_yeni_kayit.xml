@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/anatema"
+    tools:context=".YeniKayit">
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="?attr/anatema">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/close"
+            android:src="@drawable/close"
+            app:tint="?attr/textrengi"
+            android:background="?attr/anatema"
+            android:contentDescription="Çık"
+            />
+
+        <TextView
+            android:id="@+id/txtkayit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/montserratextrabold"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/durum"
+        android:layout_below="@id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="25dp"
+            android:background="?attr/turuncumavi3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durum"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="?attr/turuncumavi3"
+            android:textSize="17sp"
+            />
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:background="?attr/turuncumavi3" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/durum"
+        android:layout_marginTop="20dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menu"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/filter_spinner_dropdown_bg"
+            app:boxBackgroundColor="#F45938"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:endIconDrawable="@drawable/down"
+            app:endIconTint="#FDA592">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="wrap_content"
+                android:popupBackground="@drawable/filter_spinner_dropdown_bg"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/montserratmedium"
+                android:dropDownSelector="@color/turuncu2"
+                android:textColorHint="@color/white"
+                android:inputType="none"
+                android:paddingTop="9dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:gravity="left"
+                android:dropDownHeight="150dp"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ll"
+        android:layout_marginTop="10dp"
+        android:id="@+id/degergir"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edt_deger"
+            android:layout_width="175dp"
+            android:layout_height="99dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="50sp"
+            android:textColor="?attr/textrengi"
+            android:backgroundTint="?attr/textrengi"
+            android:fontFamily="@font/montserratextrabold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratextrabold"
+            android:text="mg/dL"
+            android:textColor="?attr/textrengi"
+            android:layout_marginStart="55dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/degergir"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/yazilar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="?attr/textrengi"
+                android:text="Tarih ve Saat"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserratextrabold"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"/>
+
+            <!--
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/notekle"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="145dp"
+                app:iconGravity="textStart"
+                android:text="NOT"
+                android:background="@null"
+                android:fontFamily="@font/montserratsemibold"
+                android:textSize="18sp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:icon="@drawable/add"
+                android:backgroundTint="@color/white"
+                android:textColor="#F45938"
+                app:iconTint="#F45938"
+                app:iconSize="18dp"/>
+                -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <DatePicker
+                android:id="@+id/mydatepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="195dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:theme="@style/MyDatePicker"
+
+                />
+
+            <TimePicker
+                android:id="@+id/mytimepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:theme="@style/MyDatePicker"
+                android:timePickerMode="spinner"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/kaydet"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_corner"
+                android:backgroundTint="@color/turuncu"
+                android:fontFamily="@font/montserratextrabold"
+                android:text="Kaydet"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sil"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/round_corner"
+                android:backgroundTint="@color/turuncu"
+                android:fontFamily="@font/montserratextrabold"
+                android:text="SİL"
+
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.projem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Projem.NoActionBar"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".SuHatirlatici"
+            android:exported="false" />
+        <activity
+            android:name=".Bildirimler"
+            android:exported="false" />
+        <activity
+            android:name=".Feedback"
+            android:exported="false" />
+        <activity
+            android:name=".Hesapla"
+            android:exported="false" />
+        <activity
+            android:name=".YemekEkle"
+            android:exported="false" />
+        <activity
+            android:name=".YeniKayit"
+            android:exported="false" />
+        <activity
+            android:name=".Bilgi6"
+            android:exported="false" />
+        <activity
+            android:name=".Bilgi5"
+            android:exported="false" />
+        <activity
+            android:name=".Bilgi4"
+            android:exported="false" />
+        <activity
+            android:name=".Bilgi3"
+            android:exported="false" />
+        <activity
+            android:name=".Bilgi2"
+            android:exported="false" />
+        <activity
+            android:name=".Bilgi1"
+            android:exported="false" />
+        <activity
+            android:name=".Ayarlar"
+            android:exported="false" />
+        <activity
+            android:name=".KarbSayfa"
+            android:exported="false" />
+        <activity
+            android:name=".SekerTakipSayfa"
+            android:exported="false" />
+        <activity
+            android:name=".KayitSayfa"
+            android:exported="false" />
+        <activity
+            android:name=".LoginSayfa"
+            android:exported="false" />
+        <activity
+            android:name=".AcilisSayfasi"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <provider
+            android:name=".ContentProvider"
+            android:authorities="com.example.projem.ContentProvider" />
+
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

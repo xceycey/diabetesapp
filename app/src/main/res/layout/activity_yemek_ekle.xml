@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/anatema"
+    tools:context=".YeniKayit">
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="?attr/anatema">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/close"
+            android:src="@drawable/close"
+            app:tint="?attr/textrengi"
+            android:background="?attr/anatema"
+            android:contentDescription="Çık"
+            />
+
+        <TextView
+            android:id="@+id/txtkayit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/montserratextrabold"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_below="@id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <View
+            android:layout_width="75dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="25dp"
+            android:background="?attr/turuncumavi3" />
+        <TextView
+            android:id="@+id/yiyecek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni Yiyecek Ekle"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="?attr/turuncumavi3"
+            android:textSize="17sp"
+            />
+
+        <View
+            android:layout_width="75dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:background="?attr/turuncumavi3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yemek Adı"
+            android:textColor="?attr/textrengi"
+            android:paddingLeft="25dp"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserratextrabold"/>
+
+        <EditText
+            android:id="@+id/yemekadi"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="10dp"
+            android:textColor="?attr/textrengi"
+            android:fontFamily="@font/montserratsemibold"
+            android:background="@drawable/edittext"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Porsiyon Miktarı"
+            android:textColor="?attr/textrengi"
+            android:paddingLeft="25dp"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserratextrabold"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="25dp">
+    <EditText
+        android:id="@+id/miktar"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:text="1"
+        android:inputType="numberSigned"
+        android:gravity="center"
+        android:fontFamily="@font/montserratsemibold"
+        android:textColor="?attr/textrengi"
+        android:background="@drawable/edittext"/>
+
+    <EditText
+        android:id="@+id/servis"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="25dp"
+        android:text="Porsiyon"
+        android:fontFamily="@font/montserratsemibold"
+        android:gravity="center|left"
+        android:textColor="?attr/textrengi"
+        android:background="@drawable/edittext"
+        android:paddingLeft="10dp"/>
+</LinearLayout>
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/ll2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Karbonhidrat Miktarı"
+        android:textColor="?attr/textrengi"
+        android:paddingLeft="25dp"
+        android:textSize="17sp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserratextrabold"/>
+    <EditText
+        android:id="@+id/karb"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:gravity="center|left"
+        android:textColor="?attr/textrengi"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edittext"
+        android:paddingLeft="10dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="144dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        app:icon="@drawable/addphoto"
+        android:id="@+id/foto"
+        app:iconTint="?attr/beyazsiyah"
+        android:backgroundTint="?attr/textrengi"
+        />
+
+    <TextView
+        android:id="@+id/fototxt"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:gravity="center_vertical"
+        android:text="Fotoğraf Ekle"
+        android:textColor="?attr/textrengi"
+        android:textSize="17sp" />
+
+</LinearLayout>
+
+<ImageView
+    android:visibility="gone"
+    android:id="@+id/imageview"
+    android:layout_height="100dp"
+    android:layout_width="100dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="25dp"
+    />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:gravity="center"
+    android:layout_marginBottom="10dp">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/kaydet"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/turuncu"
+        android:fontFamily="@font/montserratextrabold"
+        android:text="Kaydet"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sil"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/turuncu"
+        android:fontFamily="@font/montserratextrabold"
+        android:text="SİL"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"
+        android:textSize="17sp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ogunekle"
+        android:layout_width="160dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/turuncu"
+        android:fontFamily="@font/montserratextrabold"
+        android:text="ÖĞÜNE EKLE"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mavi0">#08174C</color>
+    <color name="mavi1">#12245E</color>
+    <color name="mavi2">#243B83</color>
+    <color name="mavi3">#7592C8</color>
+    <color name="black">#121212</color>
+    <color name="black2">#373737</color>
+    <color name="white0">#D4D4D6</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white2">#F2F2F2</color>
+    <color name="turuncu">#F45938</color>
+    <color name="turuncu2">#FDA592</color>
+
+
+
+</resources>

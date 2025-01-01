@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "389832029905",
+    "project_id": "diyabetapp-af1c0",
+    "storage_bucket": "diyabetapp-af1c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389832029905:android:3289e4e6d81551e618f7f0",
+        "android_client_info": {
+          "package_name": "com.example.projem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389832029905-3l73t37t3gg9kul20asjc99iovanfv8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB88Td3ST5nD6VpyurCHTgLYqyEXgg8G8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389832029905-3l73t37t3gg9kul20asjc99iovanfv8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

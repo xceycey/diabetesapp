@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ayarlar">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_corner"
+        app:itemIconSize="22dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/item_menu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/anatema">
+
+        <LinearLayout
+            android:id="@+id/bodycontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/txt_ana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/montserratextrabold"
+                android:padding="5dp"
+                android:text="AYARLAR"
+                android:textSize="23sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/giris"
+                android:backgroundTint="?attr/beyazmavi2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="10dp"
+                        android:src="@drawable/acc"
+                        app:tint="?attr/textrengi" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txthesapbil"
+                            android:layout_width="263dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserratextrabold"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:id="@+id/txthesapbil2"
+                            android:layout_width="263dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserratextrabold"
+                            android:paddingTop="5dp"
+
+                            android:paddingBottom="15dp"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/giris"
+                android:backgroundTint="?attr/beyazmavi2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/mod"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:text="Açık Tema"
+                        android:layout_marginRight="5dp"
+                        android:textColor="?attr/textrengi"
+                        android:textSize="17sp" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switchmode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:checked="false"
+                        android:theme="@style/CustomSwitchTheme" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratbold"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:text="Koyu Tema"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="?attr/textrengi"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/giris"
+                    android:backgroundTint="?attr/beyazmavi2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@drawable/service"
+                            app:tint="?attr/textrengi"/>
+
+                        <TextView
+                            android:id="@+id/oran"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/montserratbold"
+                            android:gravity="left"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="Karbonhidrat Oranı Ayarla"
+                            android:textColor="?attr/textrengi"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="25dp"
+                        android:background="?attr/anatema"  />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@drawable/water2"
+                            app:tint="?attr/textrengi"/>
+
+                        <TextView
+                            android:id="@+id/suhatirlatici"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/montserratbold"
+                            android:gravity="left"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="Su Hedefi"
+                            android:textColor="?attr/textrengi"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="25dp"
+                        android:background="?attr/anatema"  />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@drawable/notifications"
+                            app:tint="?attr/textrengi"/>
+
+                        <TextView
+                            android:id="@+id/bildirim"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/montserratbold"
+                            android:gravity="left"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="Bildirimler"
+                            android:textColor="?attr/textrengi"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+                </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/giris"
+            android:backgroundTint="?attr/beyazmavi2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/feedback"
+                    app:tint="?attr/textrengi" />
+
+                <TextView
+                    android:id="@+id/feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="left"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="Geri Bildirim"
+                    android:textColor="?attr/textrengi"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="25dp"
+                        android:background="?attr/anatema"  />
+
+
+                   <!-- <LinearLayout
+                        android:id="@+id/dil"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@drawable/language"
+                            app:tint="?attr/textrengi" />
+
+                        <TextView
+                            android:layout_width="152dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserratbold"
+                            android:gravity="left"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="?attr/textrengi"
+                            android:text="Dil"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="25dp"
+                        android:background="?attr/anatema"  />
+                        -->
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/logout"
+                    app:tint="?attr/textrengi" />
+
+                <TextView
+                    android:id="@+id/cikisyap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="left"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="Çıkış Yap"
+                    android:textColor="?attr/textrengi"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Projem" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorAccent">@color/white</item>
+        <item name="anatema">@color/mavi1</item>
+        <item name="textrengi">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item  name="turuncumavi3">@color/mavi3</item>
+        <item name="beyazmavi2">@color/mavi2</item>
+        <item name="beyaz0mavi2">@color/mavi2</item>
+        <item name="siyah2mavi3">@color/mavi3</item>
+        <item name="siyah2beyaz">@color/white</item>
+        <item name="beyazsiyah">@color/black</item>
+        <item name="siyah2siyah">@color/black</item>
+        <item name="beyaz0turuncu">@color/turuncu</item>
+        <item name="beyaz2turuncu">@color/turuncu</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/mavi0</item>
+        <item name="siyah2mavi2">@color/mavi2</item>
+        <item name="alertDialogTheme">@style/MyAlertDialogTheme</item>
+    </style>
+
+    <style name="MyAlertDialogTheme" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:textAppearanceSmall">@style/MyTextAppearance</item>
+        <item name="android:textAppearanceMedium">@style/MyTextAppearance</item>
+        <item name="android:textAppearanceLarge">@style/MyTextAppearance</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="MyTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/montserratbold</item>
+    </style>
+
+    <style name="MyDatePicker" >
+        <!-- Text color -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!-- Divider color -->
+        <item name="colorControlNormal">@color/mavi3</item>
+    </style>
+
+    <style name="CustomSwitchTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- Active thumb color & Active track color(30% transparency) -->
+        <item name="colorControlActivated">@color/mavi1</item>
+        <!-- Inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <!-- Inactive track color(30% transparency) -->
+        <item name="android:colorForeground">@color/white</item>
+    </style>
+
+</resources>
